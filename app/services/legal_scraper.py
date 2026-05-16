@@ -110,6 +110,17 @@ FDROID_POPULAR = [
     "com.aurora.store", "app.organicmaps.debug", "io.github.quillpad.quillpad",
     "com.marverenic.music", "de.nulide.findmydevice", "org.witness.sscphase1",
     "com.github.tachiyomix.mangadex", "org.emacs.emacs",
+    "org.videolan.vlc", "org.mozilla.fenix", "org.torproject.torbrowser",
+    "com.duckduckgo.mobile.android", "org.telegram.messenger", "com.whatsapp",
+    "com.facebook.katana", "com.instagram.android", "com.spotify.music",
+    "com.netflix.mediaclient", "com.ebay.mobile", "com.amazon.mShop.android.shopping",
+    "com.microsoft.teams", "com.zoom.videoconferences", "com.skype.raider",
+    "com.viber.voip", "com.snapchat.android", "com.twitter.android",
+    "com.zhiliaoapp.musically", "com.pinterest", "com.linkedin.android",
+    "com.reddit.frontpage", "com.tumblr", "com.flickr.android",
+    "com.google.android.youtube", "com.google.android.apps.docs",
+    "com.google.android.apps.maps", "com.google.android.gm",
+    "com.google.android.apps.photos", "com.google.android.apps.translate"
 ]
 
 
