@@ -10,5 +10,5 @@ jobs:
     steps:
       - name: Trigger Scraper API
         run: |
-          curl -X POST "https://apkdroid-backend-production.up.railway.app/api/v1/admin/scrape/trigger?source=all&limit=50" \
+          curl --fail --verbose -X POST "https://apkdroid-backend-production.up.railway.app/api/v1/admin/scrape/trigger?source=all&limit=50" \
           -H "X-Admin-Key: ${{ secrets.ADMIN_API_KEY }}"
