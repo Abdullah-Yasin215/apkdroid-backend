@@ -1,14 +1,16 @@
 name: Daily App Scrape
 on:
   schedule:
-    - cron: '0 0 * * *' # Runs at midnight UTC every day
-  workflow_dispatch: # Allows you to run it manually from GitHub Actions tab
+    - cron: '0 0 * * *'
+  workflow_dispatch:
 
 jobs:
   scrape:
     runs-on: ubuntu-latest
     steps:
       - name: Trigger Scraper API
+        env:
+          ADMIN_KEY: ${{ secrets.ADMIN_API_KEY }}
         run: |
-          curl --fail --verbose -X POST "https://apkdroid-backend-production.up.railway.app/api/v1/admin/scrape/trigger?source=all&limit=50" \
-          -H "X-Admin-Key: ${{ secrets.ADMIN_API_KEY }}"
+          curl -X POST "https://apkdroid-backend-production.up.railway.app/api/v1/admin/scrape/trigger?source=all&limit=50" \
+            -H "X-Admin-Key: $ADMIN_KEY"
