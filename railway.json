@@ -1,0 +1,10 @@
+{
+  "service": {
+    "name": "apkdroid-backend",
+    "plan": "free"
+  },
+  "cron": {
+    "schedule": "0 2 * * *",
+    "command": "python -m app.scraper"
+  }
+}
